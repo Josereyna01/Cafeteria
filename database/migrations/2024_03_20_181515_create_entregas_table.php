@@ -11,17 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('procesos', function (Blueprint $table) {
-            $table->id();
+        Schema::create('entregas', function (Blueprint $table) {
+            $table->id('id_entrega');
+            $table->dateTime('fecha_entrega');
+            $table->string('nombre');
+            $table->string('status');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('procesos');
+        Schema::dropIfExists('entregas');
     }
 };
