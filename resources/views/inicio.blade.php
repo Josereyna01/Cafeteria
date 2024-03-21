@@ -22,6 +22,7 @@
         .navbar-brand img {
             width: 100px; 
             height: auto; 
+            margin-right: 100%;
         }
         
         .navbar-nav .nav-link {
@@ -89,7 +90,6 @@
                     <li class="nav-item">
                         <a href="register" class="material-icons icono-blanco">account_circle</a>
                     </li>
-                    
                 </ul>
             </div>
         </div>
