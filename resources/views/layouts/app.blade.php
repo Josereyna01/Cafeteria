@@ -6,6 +6,7 @@
     <title>Sol y Cafe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     <style>
        body {
             padding-top: 100px; 
@@ -87,10 +88,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="register" class="material-icons icono-blanco">account_circle</a>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="material-icons icono-blanco">account_circle</i>   
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{ route('register') }}">Registrar</a></li>
+                            <li><a class="dropdown-item" href="{{ route('login') }}">Iniciar Sesión</a></li>
+                        </ul>
                     </li>
-                    
                 </ul>
             </div>
             @endauth
